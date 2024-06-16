@@ -12,26 +12,26 @@ class Prestamo{
 
     public function MostrarDatos(){
 
-        public'Id del Prestamo'.$this->Id .'<br>';
+        echo'Id del Prestamo'.$this->Id .'<br>';
 
-        public'Linea de Prestamo'.$this->LineadePrestamo->Descripcion.'<br>';
-        public'Tasa Efectiva Mensual'.$this->LineaDePrestamo->TasaEfectivaMensual.'<br>';
+        echo'Linea de Prestamo'.$this->LineadePrestamo->Descripcion.'<br>';
+        echo'Tasa Efectiva Mensual'.$this->LineaDePrestamo->TasaEfectivaMensual.'<br>';
 
-        public'Datos del titular <br>';
-        public'Nombre del titular'.$this->DatosPersona->Nombre.'<br>';
-        public'Apellido del titular'.$this->DatosPersona->Apellido.'<br>';
-        public'Documento del titular'.$this->DatosPersona->Docuemnto.'<br>';
+        echo'Datos del titular <br>';
+        echo'Nombre del titular'.$this->DatosPersona->Nombre.'<br>';
+        echo'Apellido del titular'.$this->DatosPersona->Apellido.'<br>';
+        echo'Documento del titular'.$this->DatosPersona->Docuemnto.'<br>';
 
-        public'Direccion del titular <br>';
-        public'Calle'.$this->Direccion->Calle.'<br>';
-        public'Numero'.$this->Direccion->Numero.'<br>';
-        public'Localidad'.$this->Direccion->Localidad.'<br>';
+        echo'Direccion del titular <br>';
+        echo'Calle'.$this->Direccion->Calle.'<br>';
+        echo'Numero'.$this->Direccion->Numero.'<br>';
+        echo'Localidad'.$this->Direccion->Localidad.'<br>';
 
-        public'Provincia'.$this->Provincia->Descripcion.'<br>';
+        echo'Provincia'.$this->Provincia->Descripcion.'<br>';
 
-        public'Fecha de alta'.$this->FechaDeAlta.'<br>';
-        public'Cantidad de Cuotas'.$this->CantidadDeCuotas.'<br>';
-        public'Monto Capital'.$this->MontoCapital.'<br>';
+        echo'Fecha de alta'.$this->FechaDeAlta.'<br>';
+        echo'Cantidad de Cuotas'.$this->CantidadDeCuotas.'<br>';
+        echo'Monto Capital'.$this->MontoCapital.'<br>';
 
     }
 
