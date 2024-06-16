@@ -26,7 +26,6 @@ class Prestamo{
         echo'Calle: '.$this->DatosPersona->Direccion->Calle.'<br>';
         echo'Numero: '.$this->DatosPersona->Direccion->Numero.'<br>';
         echo'Localidad: '.$this->DatosPersona->Direccion->Localidad.'<br>';
-
         echo'Provincia: '.$this->DatosPersona->Direccion->Provincia->Descripcion.'<br>';
         echo '----------------------- <br>';
         echo'Fecha de alta: '.$this->FechaDeAlta.'<br>';
