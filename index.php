@@ -7,7 +7,6 @@ require_once 'modelo/prestamo.php';
 require_once 'modelo/provincia.php';
 
 $Provincia= new Provincia ();
-
 $Provincia->Descripcion='Santa Fe';
 
 $Direccion= new Direccion();
@@ -22,13 +21,13 @@ $DatosPersona->Apellido='Rodriguez';
 $DatosPersona->Documento='12456789';
 $DatosPersona->Direccion=$Direccion;
 
-$LineaPrestamo= new LineaPrestamo();
+$LineaPrestamo= new LineaPrestamo(); 
 $LineaPrestamo->Descripcion='Personal Sola Firma';
 $LineaPrestamo->TasaEfectivaMensual='15 %';
 
 $Prestamo= new Prestamo();
 $Prestamo->Id='1';
-$Prestamo->LineaDePrestamo=$LineaPrestamo;
+$Prestamo->LineaPrestamo=$LineaPrestamo;
 $Prestamo->DatosPersona=$DatosPersona;
 $Prestamo->FechaDeAlta='21/08/20191';
 $Prestamo->CantidadDeCuotas='36';

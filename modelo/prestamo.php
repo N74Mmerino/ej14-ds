@@ -12,26 +12,26 @@ class Prestamo{
 
     public function MostrarDatos(){
 
-        echo'Id del Prestamo'.$this->Id .'<br>';
+        echo'Id del Prestamo:'.$this->Id .'<br>';
+        echo '----------------------- <br>';
+        echo'Linea de Prestamo: '.$this->LineaPrestamo->Descripcion.'<br>';
+        echo'Tasa Efectiva Mensual: '.$this->LineaPrestamo->TasaEfectivaMensual.'<br>';
+        echo '----------------------- <br>';
+        echo'Datos del titular:<br> ';
+        echo'Nombre del titular: '.$this->DatosPersona->Nombre.'<br>';
+        echo'Apellido del titular: '.$this->DatosPersona->Apellido.'<br>';
+        echo'Documento del titular: '.$this->DatosPersona->Documento.'<br>';
+        echo '----------------------- <br>';
+        echo'Direccion del titular:<br>';
+        echo'Calle: '.$this->DatosPersona->Direccion->Calle.'<br>';
+        echo'Numero: '.$this->DatosPersona->Direccion->Numero.'<br>';
+        echo'Localidad: '.$this->DatosPersona->Direccion->Localidad.'<br>';
 
-        echo'Linea de Prestamo'.$this->LineadePrestamo->Descripcion.'<br>';
-        echo'Tasa Efectiva Mensual'.$this->LineaDePrestamo->TasaEfectivaMensual.'<br>';
-
-        echo'Datos del titular <br>';
-        echo'Nombre del titular'.$this->DatosPersona->Nombre.'<br>';
-        echo'Apellido del titular'.$this->DatosPersona->Apellido.'<br>';
-        echo'Documento del titular'.$this->DatosPersona->Docuemnto.'<br>';
-
-        echo'Direccion del titular <br>';
-        echo'Calle'.$this->Direccion->Calle.'<br>';
-        echo'Numero'.$this->Direccion->Numero.'<br>';
-        echo'Localidad'.$this->Direccion->Localidad.'<br>';
-
-        echo'Provincia'.$this->Provincia->Descripcion.'<br>';
-
-        echo'Fecha de alta'.$this->FechaDeAlta.'<br>';
-        echo'Cantidad de Cuotas'.$this->CantidadDeCuotas.'<br>';
-        echo'Monto Capital'.$this->MontoCapital.'<br>';
+        echo'Provincia: '.$this->DatosPersona->Direccion->Provincia->Descripcion.'<br>';
+        echo '----------------------- <br>';
+        echo'Fecha de alta: '.$this->FechaDeAlta.'<br>';
+        echo'Cantidad de Cuotas: '.$this->CantidadDeCuotas.'<br>';
+        echo'Monto Capital: '.$this->MontoCapital.'<br>';
 
     }
 

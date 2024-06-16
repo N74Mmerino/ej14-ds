@@ -3,7 +3,7 @@
 class LineaPrestamo {
 
     public $Id;
-    public $Descripccion;
+    public $Descripcion;
     public $TasaEfectivaMensual;
     
 
